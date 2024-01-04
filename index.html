@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World - Travel</title>
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg bg-white fixed-top px-5 pt-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo-hello-world.png" alt="logo hello world">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHelloWorld" aria-controls="navbarHelloWorld" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarHelloWorld">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
+                <li class="nav-item pe-3">
+                    <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item pe-3">
+                    <a class="nav-link fs-5" href="#your-stories">Your Stories</a>
+                </li>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discover
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item fs-5 py-2" href="#weekly-offers">Weekly Offers</a></li>
+                    <li><a class="dropdown-item fs-5 py-2" href="#welcome-summer">Welcome Summer</a></li>
+                    <li><a class="dropdown-item fs-5 py-2" href="#last-minute">Last Minute</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item fs-5 py-2" href="#daily-offer">Daily Offer</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item pe-3">
+                    <a class="nav-link fs-5" href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+      </div>
+    </div>
+</nav>
+
+<!--JUMBOTRON-->
+<div class="jumbotron jumbo-margin">
+    <div class="bg-image jumbo-bg-image position-relative">
+        <div class="p-5 position-absolute top-0 start-0 translate-middle-y">
+            <h1 class="display-2 pt-5 mb-0 fw-bold">Discover our trips</h1>
+            <h2 class="display-4">and say <b>hello</b> to your next adventure!</h2>
+        </div>
+    </div>
+</div>
+
+<!--CONTENTS-->
+
+<!--Weekly Offers-->
+<div class="container-fluid p-5">
+    <div class="text-center">
+        <h2 id="weekly-offers" class="pb-4">Weekly Offers</h2>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3 gx-3 section-to-collapse">
+
+        <div class="col">
+            <div class="card h-100 position-relative">
+                <img src="assets/card1.jpg" alt="japanese landscape" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Dreaming Japan</h5>
+                    <p class="card-text text-white fs-4">Tokyo and Mount Fuji</p>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 position-relative">
+                <img src="assets/card2.jpg" alt="bahamas beach" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Diving into Paradise</h5>
+                    <p class="card-text text-white fs-4">Paradise Island, Bahamas</p>
+                </div>
+                <div class=" position-absolute bottom-0 end-0 p-4"> 
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 position relative">
+                <img src="assets/card3.jpg" alt="grand canyon" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Highway to Hell</h5>
+                    <p class="card-text text-white fs-4">Arizona, USA</p>
+                </div>
+                <div class="more-info position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mx-md-auto">
+            <div class="card h-100 position relative">
+                <img src="assets/card4.jpg" alt="scotland" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Celtic Castles</h5>
+                    <p class="card-text text-white fs-4">Scotland</p>
+                </div>
+                <div class="more-info position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="collapse-custom mt-3 button-close">collapse this section</button>   
+</div>
+
+<!--Welcome Summer-->
+<div class="container-fluid p-5">
+    <div class="text-center">
+        <h2 id="welcome-summer" class="pb-4">Welcome Summer</h2>
+    </div> 
+
+    <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2 gy-3 gx-3 section-to-collapse">
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card5.jpg" class="card-img-top h-50" alt="California beaches" />
+                <div class="card-body">
+                  <h5 class="card-title">California beaches</h5>
+                  <h6>California, US</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">15 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card6.jpg" class="card-img-top h-50" alt="Tenerife" />
+                <div class="card-body">
+                  <h5 class="card-title">Wild nature</h5>
+                  <h6>Tenerife, Canaries</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">8 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card7.jpg" class="card-img-top h-50" alt="Iceland"/>
+                <div class="card-body">
+                  <h5 class="card-title">Iced Summer</h5>
+                  <h6>Iceland</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">20 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card5.jpg" class="card-img-top h-50" alt="California beaches" />
+                <div class="card-body">
+                  <h5 class="card-title">California beaches</h5>
+                  <h6>California, US</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">15 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card6.jpg" class="card-img-top h-50" alt="Tenerife"/>
+                <div class="card-body">
+                  <h5 class="card-title">Wild Nature</h5>
+                  <h6>Tenerife, Canaries</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">15 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-lg">
+                <img src="assets/card7.jpg" class="card-img-top h-50" alt="Iceland"/>
+                <div class="card-body">
+                  <h5 class="card-title">Iced Summer</h5>
+                  <h6>Iceland</h6>
+                  <div class="card-text d-flex align-items-center">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="mb-0 ms-2">15 days</p>
+                  </div>
+                    <button type="button" class="more-info-custom-two">Discover</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <button class="collapse-custom mt-3 button-close">collapse this section</button>
+</div>
+
+<!--Daily Offer-->
+<div class="container-fluid px-5 py-3" id="dailyOffer">
+    <div class="text-center">
+        <h2 id="daily-offer" class="pb-4 pt-3">Daily Offer</h2>
+    </div>
+    <div class="d-flex daily-layout daily-border-custom p-3">
+        <img src="assets/daily-img.jpg" alt="santorini landscape">
+        <div class="ps-4">
+            <h3 class="py-2">Views of Greece</h3>
+            <div class="d-flex align-items-center pb-3">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <p class="mb-0 ms-2">17 days</p>
+            </div>
+            <h4 class="pb-2">starting from $500 per person</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sapiente excepturi. 
+                Eum dolorem laudantium numquam eius. Molestias maiores iste voluptatem aliquam architecto soluta, 
+                id magnam nostrum debitis ipsam, sapiente cumque.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Similique, ipsam vel. Deserunt culpa delectus sunt dignissimos, 
+                voluptas dolorem eligendi quaerat similique voluptate nemo eaque, 
+                eum reiciendis suscipit mollitia nobis tempora.
+                <br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error assumenda libero magni explicabo voluptates, velit nam provident earum harum ex deleniti impedit cumque.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--Last Minute-->
+<div class="container-fluid p-5">
+    <div class="text-center">
+        <h2 id="last-minute" class="pb-4">Last Minute</h2>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3 gx-3 section-to-collapse">
+
+        <div class="col">
+            <div class="card h-100 position-relative">
+                <img src="assets/card1.jpg" alt="japanese landscape" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Dreaming Japan</h5>
+                    <p class="card-text text-white fs-4">Tokyo and Mount Fuji</p>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 position-relative">
+                <img src="assets/card2.jpg" alt="bahamas beach" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Diving into Paradise</h5>
+                    <p class="card-text text-white fs-4">Paradise Island, Bahamas</p>
+                </div>
+                <div class=" position-absolute bottom-0 end-0 p-4"> 
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 position relative">
+                <img src="assets/card3.jpg" alt="grand canyon" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Highway to Hell</h5>
+                    <p class="card-text text-white fs-4">Arizona, USA</p>
+                </div>
+                <div class="more-info position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mx-md-auto">
+            <div class="card h-100 position relative">
+                <img src="assets/card4.jpg" alt="scotland" class="h-100">
+                <div class="card-img-overlay d-flex flex-column justify-content-start mask-bg py-4">
+                    <h5 class="card-title text-white fs-3 mb-0">Celtic Castles</h5>
+                    <p class="card-text text-white fs-4">Scotland</p>
+                </div>
+                <div class="more-info position-absolute bottom-0 end-0 p-4">
+                    <button type="button" class="more-info-custom">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="collapse-custom mt-3 button-close">collapse this section</button>   
+</div>
+
+<!--testimonial-->
+<div class="container-fluid bg-image section-bg-image mb-5">
+    <div class="text-center">
+        <h2 id="your-stories" class="py-5 text-white">Your Stories</h2>
+    </div>
+
+    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 pb-5 gy-2 gx-2">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <h5>Great experience!</h5>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit esse error voluptatibus aspernatur cum, recusandae ipsam totam quia maiores harum impedit illum dolorum nam non cumque labore ipsa maxime doloremque.</p>
+                </div>
+                <div class="card-footer text-center border-0 bg-white d-flex align-items-center">
+                    <img src="assets/download.jpg" alt="profile image" class="rounded-circle user-custom">
+                    <div class="d-flex flex-column align-items-start ps-3">
+                        <span class="fst-italic">John B.</span>
+                        <span>Hamilton, CA</span> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <h5>Great experience!</h5>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium dignissimos corporis, nulla veritatis cum qui fuga doloremque quis error itaque quaerat cumque est, perspiciatis laborum tenetur quae! Voluptatem, blanditiis!</p>
+                </div>
+                <div class="card-footer text-center border-0 bg-white d-flex align-items-center">
+                    <img src="assets/download.jpg" alt="profile image" class="rounded-circle user-custom">
+                    <div class="d-flex flex-column align-items-start ps-3">
+                        <span class="fst-italic">John B.</span>
+                        <span>Hamilton, CA</span> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <h5>Great experience!</h5>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque beatae itaque saepe maxime quia quos consectetur fugit eius non modi labore consequuntur, consequatur commodi amet id aperiam esse iusto excepturi.</p>
+                </div>
+                <div class="card-footer text-center border-0 bg-white d-flex align-items-center">
+                    <img src="assets/download.jpg" alt="profile image" class="rounded-circle user-custom">
+                    <div class="d-flex flex-column align-items-start ps-3">
+                        <span class="fst-italic">John B.</span>
+                        <span>Hamilton, CA</span> 
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer class="footer-bg text-center text-lg-start mt-5" id="contact-us">
+    <div class="container p-4">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">HELLO WORLD - Travel Agency</h5>
+  
+          <h6>First Street, NY, US</h6>
+          <h6>+00 100 200 345</h6>
+          <h6>hello-world@travel.us</h6>
+        </div>  
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 pt-5 ps-5">
+            <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contact Us</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">New message</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label text-dark">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label text-dark">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center shadow-lg p-3">
+      © 2024 Copyright:
+      <a class="text-body" href="https://github.com/federica-dalfonso">Federica D'Alfonso 4 Epicode</a>
+    </div>
+</footer>
+
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+</html>
